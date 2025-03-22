@@ -3,9 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
- "scripts": {
-  "start": "node index.js",
-  "dev": "nodemon index.js"
+"scripts": {
+  "dev": "vite",
+  "build": "set NODE_OPTIONS=--max-old-space-size=2048 && vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "start": "npx serve -s dist -l $PORT"
 },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
