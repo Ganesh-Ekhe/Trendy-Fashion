@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
- "scripts": {
+  "scripts": {
   "dev": "vite",
-  "build": "NODE_OPTIONS='--max-old-space-size=1024' vite build",
+  "build": "vite build",
   "lint": "eslint .",
-  "preview": "NODE_OPTIONS='--max-old-space-size=1024' vite preview --host 0.0.0.0 --port 10000"
-}
-,
+  "preview": "vite preview",
+  "start": "vite preview --port 10000"
+},
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
     "@tailwindcss/vite": "^4.0.5",
