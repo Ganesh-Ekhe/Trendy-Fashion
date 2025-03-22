@@ -8,8 +8,9 @@
   "build": "NODE_OPTIONS='--max-old-space-size=2048' vite build",
   "lint": "eslint .",
   "preview": "vite preview",
-  "start": "serve -s dist -l $PORT"
+  "start": "npx serve -s dist -l $PORT"
 }
+
 ,
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
