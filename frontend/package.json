@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
   "dev": "vite",
-  "build": "vite build",
+  "build": "NODE_OPTIONS='--max-old-space-size=2048' vite build",
   "lint": "eslint .",
   "preview": "vite preview",
   "start": "vite preview --port 10000"
-},
+}
+,
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
     "@tailwindcss/vite": "^4.0.5",
