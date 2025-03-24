@@ -42,6 +42,9 @@ router.get("/all-user",authToken,allUsers)
 router.post("/update-user",authToken,updateUser)
 
 //product
+router.get('/test', (req, res) => {
+    res.status(200).json({ message: 'API is working!' });
+});
 
 router.post("/upload-product",authToken,UploadProductController)
 router.get("/get-product",getProductController)
