@@ -1,86 +1,82 @@
+const backendDomain = import.meta.env.VITE_API_BASE_URL;
 
-
-const backendDomain = "http://localhost:8095"
-
-const  SummaryApi = {
-    signUp : {
-        url :`${backendDomain}/api/signup`,
-        method : "post"
-    },
-    signIn : {
-        url : `${backendDomain}/api/signin`,
-        method : "post"
-    },
-    current_user : {
-        url:`${backendDomain}/api/user-details`,
-          method : "get"
-    },
-    logout_user : {
-        url : `${backendDomain}/api/userLogout`,
-         method : "get"
-    },
-    allUser : {
-        url : `${backendDomain}/api/all-user`,
-         method : "get"
-    },
-    updateUser : {
-        url : `${backendDomain}/api/update-user`,
-        method : "post"
-    },
-    uploadProduct : {
-        url : `${backendDomain}/api/upload-product`,
-         method : "post"
-
-    },
-    allProduct : {
-        url : `${backendDomain}/api/get-product`,
-          method : "get"
-    },
-    updateProduct : {
-        url : `${backendDomain}/api/update-product`,
-           method : "post"
-    },
-    categoryProduct : {
-        url : `${backendDomain}/api/get-categoryProduct`,
-         method : "get"
-    },
-  categoryWiseProduct : {
-    url : `${backendDomain}/api/category-product`,
-    method : "post"
+const SummaryApi = {
+  signUp: {
+    url: `${backendDomain}/api/signup`,
+    method: "post",
   },
-  productDetails : {
-    url : `${backendDomain}/api/product-details`,
-      method : "post"
-
+  signIn: {
+    url: `${backendDomain}/api/signin`,
+    method: "post",
   },
-  addToCartProduct :{
-    url : `${backendDomain}/api/addtocart`,
-     method : "post"
+  current_user: {
+    url: `${backendDomain}/api/user-details`,
+    method: "get",
   },
-  addToCartProductCount : {
-    url :`${backendDomain}/api/countAddToCartProduct`,
-    method:"get"
+  logout_user: {
+    url: `${backendDomain}/api/userLogout`,
+    method: "get",
   },
-  addToCartProductView :{
-    url :`${backendDomain}/api/view-card-product`,
-    method:"get"
+  allUser: {
+    url: `${backendDomain}/api/all-user`,
+    method: "get",
   },
-  updateCartProduct : {
-    url : `${backendDomain}/api/update-cart-product`,
-    method : "post"
+  updateUser: {
+    url: `${backendDomain}/api/update-user`,
+    method: "post",
   },
-  deleteCartProduct:{
-    url :`${backendDomain}/api/delete-cart-product`,
-    method : "post"
+  uploadProduct: {
+    url: `${backendDomain}/api/upload-product`,
+    method: "post",
   },
-  searchProduct : {
+  allProduct: {
+    url: `${backendDomain}/api/get-product`,
+    method: "get",
+  },
+  updateProduct: {
+    url: `${backendDomain}/api/update-product`,
+    method: "post",
+  },
+  categoryProduct: {
+    url: `${backendDomain}/api/get-categoryProduct`,
+    method: "get",
+  },
+  categoryWiseProduct: {
+    url: `${backendDomain}/api/category-product`,
+    method: "post",
+  },
+  productDetails: {
+    url: `${backendDomain}/api/product-details`,
+    method: "post",
+  },
+  addToCartProduct: {
+    url: `${backendDomain}/api/addtocart`,
+    method: "post",
+  },
+  addToCartProductCount: {
+    url: `${backendDomain}/api/countAddToCartProduct`,
+    method: "get",
+  },
+  addToCartProductView: {
+    url: `${backendDomain}/api/view-card-product`,
+    method: "get",
+  },
+  updateCartProduct: {
+    url: `${backendDomain}/api/update-cart-product`,
+    method: "post",
+  },
+  deleteCartProduct: {
+    url: `${backendDomain}/api/delete-cart-product`,
+    method: "post",
+  },
+  searchProduct: {
     url: `${backendDomain}/api/search`,
-    method : "get"
+    method: "get",
   },
-  filterProduct : {
-    url :`${backendDomain}/api/filter-product`,
-    method : "post"
-  }
+  filterProduct: {
+    url: `${backendDomain}/api/filter-product`,
+    method: "post",
+  },
+};
 
-}
-export default SummaryApi
+export default SummaryApi;
